@@ -1,0 +1,74 @@
+<nav
+  [ngClass]="{
+    'bg-principal': isMenuOpen,
+    'bg-transparent': !isMenuOpen,
+  }"
+  class="relative z-50 w-full">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-base py-lg">
+    <a href="#" (click)="closeMenu()" aria-label="Cut&Flow - Inicio">
+      <app-logo></app-logo>
+    </a>
+
+    <!-- Navegación escritorio -->
+    <div class="hidden items-center gap-2xl md:flex">
+      <a href="#services" class="text-label text-muted transition-colors hover:text-primary">Servicios</a>
+
+      <a href="#about" class="text-label text-muted transition-colors hover:text-primary">Nosotros</a>
+
+      <a href="#team" class="text-label text-muted transition-colors hover:text-primary">Equipo</a>
+    </div>
+
+    <!-- Botón escritorio -->
+    <div class="hidden md:block">
+      <a href="#booking">
+        <app-button>Reservar cita</app-button>
+      </a>
+    </div>
+
+    <!-- Botón hamburguesa móvil -->
+    <button
+      type="button"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="isMenuOpen"
+      aria-label="Abrir o cerrar menú"
+      class="flex h-10 w-10 items-center justify-center rounded-controls text-text transition-colors hover:bg-surface md:hidden">
+      <i class="fa-solid fa-bars text-text text-2xl" *ngIf="!isMenuOpen"></i>
+
+      <i class="fa-solid fa-xmark text-text text-2xl" *ngIf="isMenuOpen"></i>
+    </button>
+  </div>
+
+  <!-- Menú móvil -->
+  <div
+    *ngIf="isMenuOpen"
+    class="absolute left-0 top-full z-50 flex min-h-[calc(100vh-73px)] w-full flex-col bg-principal px-base py-xl md:hidden">
+    <!-- Enlaces -->
+    <div class="flex flex-col gap-xl">
+      <a href="#services" (click)="closeMenu()" class="text-xl text-text hover:text-primary">Services</a>
+
+      <a href="#about" (click)="closeMenu()" class="text-xl text-text hover:text-primary">Our team</a>
+
+      <a href="#team" (click)="closeMenu()" class="text-xl text-text hover:text-primary">The studio</a>
+
+      <a href="#account" (click)="closeMenu()" class="text-xl text-text hover:text-primary">My account</a>
+    </div>
+
+    <!-- Botón inferior -->
+    <div class="mt-auto pt-xl space-y-4">
+      <a href="#booking" (click)="closeMenu()" class="block w-full">
+        <app-button [fullWidth]="true">Reservar cita</app-button>
+      </a>
+      <p class="text-sm text-muted">Calle 25 #32-54 - Manizales, Caldas</p>
+      <div class="flex justify-between">
+        <a href="instagram.com" class="text-lg">
+          Instagram
+          <i class="fa-brands fa-instagram" style="color: rgb(205, 255, 0)"></i>
+        </a>
+        <a href="facebook.com" class="text-lg">
+          Facebook
+          <i class="fa-brands fa-square-facebook" style="color: rgb(205, 255, 0)"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

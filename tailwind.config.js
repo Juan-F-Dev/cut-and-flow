@@ -17,6 +17,7 @@ module.exports = {
         "body-custom": ["16px", { lineHeight: "22px" }],
         label: ["14px", { lineHeight: "20px" }],
         caption: ["12px", { lineHeight: "17px" }],
+        logo: ["28px", {lineHeight: "1"}]
       },
 
       colors: {

@@ -1,0 +1,47 @@
+<div class="min-h-screen bg-principal px-base py-3xl">
+  <div class="mx-auto max-w-7xl">
+    <header class="mb-3xl">
+      <app-logo></app-logo>
+      <h1 class="text-primary text-2xl font-extrabold">Libreria de Componentes</h1>
+      <p class="mt-base text-body-custom text-muted">Biblioteca de componentes reutilizables de Cut&Flow.</p>
+    </header>
+
+    <!-- Buttons -->
+    <section class="mb-3xl">
+      <h2 class="mb-xl text-h2 font-semibold text-text">Buttons</h2>
+      <div class="flex flex-wrap items-center gap-4 rounded-cards border border-line bg-surface p-xl">
+        <app-button>Book Now ↗</app-button>
+        <app-button [variant]="'secondary'" [disabled]="true">Explore our services ↓</app-button>
+      </div>
+    </section>
+
+    <!-- Inputs -->
+    <section class="mb-3xl">
+      <h2 class="mb-xl text-h2 font-semibold text-text">Buttons</h2>
+      <div class="flex flex-wrap items-center gap-4 rounded-cards border border-line bg-surface p-xl">
+        <app-input label="Correo electrónico" type="email" placeholder="ejemplo@correo.com"></app-input>
+
+        <app-input
+          label="Correo electrónico"
+          type="email"
+          placeholder="ejemplo@correo.com"
+          [error]="true"
+          errorMessage="Ingresa un correo electrónico válido"></app-input>
+      </div>
+    </section>
+
+    <!-- Loading  -->
+    <section class="mb-3xl">
+      <h2 class="mb-xl text-h2 font-semibold text-text">Buttons</h2>
+      <div class="flex flex-wrap items-center gap-4 rounded-cards border border-line bg-surface p-xl">
+        <app-loading size="sm"></app-loading>
+
+        <app-loading size="md" color="text"></app-loading>
+
+        <app-loading size="md"></app-loading>
+
+        <app-loading size="lg"></app-loading>
+      </div>
+    </section>
+  </div>
+</div>

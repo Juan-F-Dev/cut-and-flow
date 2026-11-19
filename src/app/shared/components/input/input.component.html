@@ -1,0 +1,19 @@
+<div class="flex flex-col gap-2">
+  <label *ngIf="label" class="font-sans text-label font-medium text-text">
+    {{ label }}
+  </label>
+
+  <input
+    [type]="type"
+    [placeholder]="placeholder"
+    [disabled]="disabled"
+    [ngClass]="{
+      'border-error focus:border-error': error,
+      'border-line focus:border-primary': !error,
+    }"
+    class="w-full rounded-controls border border-line bg-surface px-base py-md font-sans text-body-custom text-text outline-none transition-colors duration-200 placeholder:text-muted focus:border-primary disabled:cursor-not-allowed disabled:opacity-50 hover:bg-raised"
+  />
+  <span *ngIf="error && errorMessage" class="font-sans text-caption text-error">
+    {{ errorMessage }}
+  </span>
+</div>

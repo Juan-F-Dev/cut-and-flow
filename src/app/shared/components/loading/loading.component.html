@@ -1,0 +1,16 @@
+<div
+  role="status"
+  aria-label="Cargando"
+  class="inline-flex items-center justify-center"
+>
+  <span
+    [ngClass]="{
+      'h-4 w-4 border-2': size === 'sm',
+      'h-6 w-6 border-[3px]': size === 'md',
+      'h-10 w-10 border-4': size === 'lg',
+      'border-primary': color === 'primary',
+      'border-text': color === 'text',
+    }"
+    class="inline-block animate-spin rounded-full border-solid border-r-transparent"
+  ></span>
+</div>

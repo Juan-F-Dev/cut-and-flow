@@ -6,7 +6,9 @@
     'text-text disabled:bg-principal disabled:text-text hover:bg-raised active:bg-principal active:text-primary active:transition-all active:duration-75 ':
       variant === 'secondary',
     'w-full': fullWidth,
+    'justify-center': align === 'center',
+    'justify-start': align === 'left'
   }"
-  class="inline-flex items-center justify-center rounded-controls px-lg py-md font-sans font-semibold transition-colors duration-200 disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-principal">
+  class="inline-flex items-center rounded-controls px-lg py-md font-sans font-semibold transition-colors duration-200 disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-principal">
   <ng-content></ng-content>
 </button>

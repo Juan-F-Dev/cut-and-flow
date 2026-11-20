@@ -4,25 +4,26 @@
     'bg-transparent': !isMenuOpen,
   }"
   class="relative z-50 w-full">
-  <div class="mx-auto flex max-w-7xl items-center justify-between px-base py-lg">
+  <div class="mx-auto flex max-w-screen-2xl items-center justify-between px-base py-lg">
     <a href="#" (click)="closeMenu()" aria-label="Cut&Flow - Inicio">
       <app-logo></app-logo>
     </a>
 
-    <!-- Navegación escritorio -->
-    <div class="hidden items-center gap-2xl md:flex">
-      <a href="#services" class="text-label text-muted transition-colors hover:text-primary">Servicios</a>
+    <div class="flex gap-3xl">
+      <!-- Navegación escritorio -->
+      <div class="hidden items-center gap-2xl md:flex">
+        <a href="#services" class="text-label text-muted transition-colors hover:text-primary">Services</a>
+        <a href="#ourteam" class="text-label text-muted transition-colors hover:text-primary">Our team</a>
+        <a href="#thestudio" class="text-label text-muted transition-colors hover:text-primary">The studio</a>
+        <a href="#myaccount" class="text-label text-muted transition-colors hover:text-primary">My account</a>
+      </div>
 
-      <a href="#about" class="text-label text-muted transition-colors hover:text-primary">Nosotros</a>
-
-      <a href="#team" class="text-label text-muted transition-colors hover:text-primary">Equipo</a>
-    </div>
-
-    <!-- Botón escritorio -->
-    <div class="hidden md:block">
-      <a href="#booking">
-        <app-button>Reservar cita</app-button>
-      </a>
+      <!-- Botón escritorio -->
+      <div class="hidden md:block">
+        <a href="#booking">
+          <app-button>Reservar cita</app-button>
+        </a>
+      </div>
     </div>
 
     <!-- Botón hamburguesa móvil -->
@@ -46,11 +47,11 @@
     <div class="flex flex-col gap-xl">
       <a href="#services" (click)="closeMenu()" class="text-xl text-text hover:text-primary">Services</a>
 
-      <a href="#about" (click)="closeMenu()" class="text-xl text-text hover:text-primary">Our team</a>
+      <a href="#ourteam" (click)="closeMenu()" class="text-xl text-text hover:text-primary">Our team</a>
 
-      <a href="#team" (click)="closeMenu()" class="text-xl text-text hover:text-primary">The studio</a>
+      <a href="#thestudio" (click)="closeMenu()" class="text-xl text-text hover:text-primary">The studio</a>
 
-      <a href="#account" (click)="closeMenu()" class="text-xl text-text hover:text-primary">My account</a>
+      <a href="#myaccount" (click)="closeMenu()" class="text-xl text-text hover:text-primary">My account</a>
     </div>
 
     <!-- Botón inferior -->

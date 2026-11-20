@@ -1,1 +1,13 @@
-<p>team works!</p>
+<section id="ourteam" class="bg-principal px-base py-3xl md:px-10">
+  <div class="mx-auto max-w-screen-2xl space-y-8">
+    <p class="text-body-custom text-primary">02 / THE PEOPLE</p>
+    <h3 class="text-h2 font-semibold">Find your person.</h3>
+    <div class="grid grid-cols-1 gap-lg md:grid-cols-2 lg:grid-cols-3">
+      <app-team-card
+        *ngFor="let member of teamMembers"
+        [image]="member.image"
+        [name]="member.name"
+        [description]="member.description"></app-team-card>
+    </div>
+  </div>
+</section>

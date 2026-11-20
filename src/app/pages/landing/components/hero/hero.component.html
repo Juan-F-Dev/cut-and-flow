@@ -1,5 +1,6 @@
-<section class="flex min-h-[calc(100vh-73px)] flex-col justify-between text-center pb-20">
-  <div class="mx-auto w-full max-w-7xl flex flex-1 flex-col items-center justify-center px-base space-y-10">
+<section class="flex min-h-[calc(100vh-73px)] flex-col justify-between text-center pb-20 md:text-left md:px-10">
+  <div
+    class="mx-auto w-full max-w-screen-2xl flex flex-1 flex-col items-center justify-center px-base space-y-10 md:items-start">
     <div class="space-y-8">
       <p class="text-primary text-caption">YOUR STYLE. YOUR RHYTHM.</p>
       <h1 class="text-[56px] font-bold leading-[1.1] md:text-display">
@@ -10,24 +11,24 @@
 
     <!-- actions -->
     <div class="space-y-8">
-      <p class="text-xl">
+      <p class="text-xl max-w-md">
         Precision cuts. Personal style. A moment for you. Find your signature look with people who get it.
       </p>
-      <div>
+      <div class="md:flex">
         <app-button [fullWidth]="true">Find your flow ↗</app-button>
         <app-button [variant]="'secondary'">Explore our services ↓</app-button>
       </div>
     </div>
-  </div>
-  <!-- raiting -->
-  <div>
-    <div class="">
-      <i class="fa-solid fa-star text-primary"></i>
-      <i class="fa-solid fa-star text-primary"></i>
-      <i class="fa-solid fa-star text-primary"></i>
-      <i class="fa-solid fa-star text-primary"></i>
-      <i class="fa-solid fa-star text-primary"></i>
+    <!-- raiting -->
+    <div class="md:flex md:gap-lg">
+      <div class="">
+        <i class="fa-solid fa-star text-primary"></i>
+        <i class="fa-solid fa-star text-primary"></i>
+        <i class="fa-solid fa-star text-primary"></i>
+        <i class="fa-solid fa-star text-primary"></i>
+        <i class="fa-solid fa-star text-primary"></i>
+      </div>
+      <p>4.9 / 5 · Loved by 1,200+ clients</p>
     </div>
-    <p>4.9 / 5 · Loved by 1,200+ clients</p>
   </div>
 </section>

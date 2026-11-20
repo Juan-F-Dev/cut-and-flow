@@ -1,1 +1,22 @@
-<p>services works!</p>
+<section id="services" class="bg-principal px-base py-3xl md:px-10">
+  <div class="mx-auto max-w-screen-2xl space-y-8">
+    <div class="grid grid-cols-1 gap-y-2xl lg:grid-cols-2">
+      <div class="space-y-8">
+        <p class="text-body-custom text-primary">01 / THE MENU</p>
+        <p class="text-h2 font-semibold max-w-[90%]">A little reset. A whole new you.</p>
+      </div>
+      <div class="lg:text-right">
+        <a class="text-muted text-body-custom block">View all services ↗</a>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 gap-lg md:grid-cols-2 lg:grid-cols-3">
+      <app-service-card
+        *ngFor="let service of services"
+        [serviceNumber]="service.serviceNumber"
+        [title]="service.title"
+        [description]="service.description"
+        [price]="service.price"
+        [duration]="service.duration"></app-service-card>
+    </div>
+  </div>
+</section>

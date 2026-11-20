@@ -10,4 +10,5 @@ export class ButtonComponent {
   @Input() type: 'button' | 'submit' | 'reset' = 'button';
   @Input() disabled: boolean = false;
   @Input() fullWidth: boolean = false;
+  @Input() align: 'center' | 'left' = 'center';
 }

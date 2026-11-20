@@ -1,0 +1,21 @@
+<article class="group flex aspect-square flex-col overflow-hidden rounded-cards ">
+  <!-- Imagen del barbero -->
+  <div class="min-h-0 flex-[4] overflow-hidden rounded-t-cards">
+    <img [src]="image" [alt]="'Portrait of ' + name" class="h-full w-full object-cover" />
+  </div>
+
+  <!-- Información del barbero -->
+  <div class="flex min-h-0 flex-1 flex-col justify-center gap-xs py-xs">
+    <div class="flex items-center justify-between">
+      <h3 class="truncate text-h3 font-semibold text-text">
+        {{ name }}
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right text-primary text-xs transition-transform duration-200 -rotate-45 group-hover:translate-x-1"></i>
+    </div>
+
+    <p class="truncate text-caption text-muted">
+      {{ description }}
+    </p>
+  </div>
+</article>

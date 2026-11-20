@@ -1,0 +1,32 @@
+<article class="group flex flex-col gap-xl rounded-cards bg-raised p-xl transition-colors duration-200">
+  <!-- Identificador y flecha -->
+  <div class="flex items-center justify-between">
+    <span class="text-label font-medium text-muted">
+      {{ serviceNumber }}
+    </span>
+
+    <i class="fa-solid fa-arrow-right text-primary transition-transform duration-200 -rotate-45 group-hover:translate-x-1 "></i>
+  </div>
+
+  <!-- Información del servicio -->
+  <div class="flex flex-col gap-sm">
+    <h3 class="text-h3 font-semibold text-text">
+      {{ title }}
+    </h3>
+
+    <p class="text-body-custom text-muted">
+      {{ description }}
+    </p>
+  </div>
+
+  <!-- Precio y duración -->
+  <div class="flex items-center justify-between">
+    <span class="text-3xl font-bold text-text">
+      {{ price }}
+    </span>
+
+    <span class="text-label text-muted">
+      {{ duration }}
+    </span>
+  </div>
+</article>

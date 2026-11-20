@@ -13,16 +13,17 @@ module.exports = {
         display: ["72px", { lineHeight: "1.1" }],
         h1: ["48px", { lineHeight: "1.2" }],
         h2: ["32px", { lineHeight: "1.25" }],
+        h2t: ["28px", {lineHeight: "1"}],
         h3: ["24px", { lineHeight: "34px" }],
         "body-custom": ["16px", { lineHeight: "22px" }],
         label: ["14px", { lineHeight: "20px" }],
         caption: ["12px", { lineHeight: "17px" }],
-        logo: ["28px", {lineHeight: "1"}]
       },
 
       colors: {
         principal: "#121212",
         surface: "#1E1E1E",
+        surfaceGreen: "#181A16",
         raised: "#242424",
         line: "#383838",
         primary: "#CAEF69",
